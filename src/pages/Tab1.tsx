@@ -1,12 +1,21 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import {
+  IonContent,
+  IonHeader,
+  IonMenuButton,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import CoreTab from "../components/core/tab/CoreTab";
+import ExploreContainer from "../components/ExploreContainer";
+import "./Tab1.css";
 
 const Tab1: React.FC = () => {
   return (
-    <IonPage>
+    <IonPage id="main-content">
       <IonHeader>
         <IonToolbar>
+          <IonMenuButton slot="start"></IonMenuButton>
           <IonTitle>Tab 1</IonTitle>
         </IonToolbar>
       </IonHeader>

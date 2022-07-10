@@ -1,3 +1,6 @@
+# 1.config test ionic : "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!(@ionic))/\"",
+# 2. npm i --save-dev @types/babel__core  && 
+# 3. config ts json 
 {
   "compilerOptions": {
     "target": "es5",
@@ -19,3 +22,4 @@
   },
   "include": ["src"]
 }
+
