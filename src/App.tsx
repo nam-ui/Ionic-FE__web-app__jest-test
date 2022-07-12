@@ -35,7 +35,7 @@ import "../node_modules/swiper/swiper.min.css";
 
 /* Theme variables */
 import { backspaceOutline } from "ionicons/icons";
-import AuthProvider from "./Auth";
+// import AuthProvider from "./Auth";
 import CoreMenu from "./components/core/menu/CoreMenu";
 import RootTab from "./components/core/tab/RootTab";
 import Introduction from "./pages/Introduction";
@@ -49,24 +49,24 @@ setupIonicReact({
 
 const App: React.FC = () => {
   return (
-    <AuthProvider>
-      <IonApp>
-        <IonReactRouter>
-          <IonSplitPane contentId="main-content">
-            <CoreMenu />
-            <IonRouterOutlet id="main-content">
-              <Switch>
-                <Route path="/introduction" component={Introduction} />
-                <Route path="/register" component={Register} />
-                <Route path="/login" component={Login} />
-                <Route path="/" component={RootTab} />
-                <Redirect from="/" to={"/tabs/home"} />
-              </Switch>
-            </IonRouterOutlet>
-          </IonSplitPane>
-        </IonReactRouter>
-      </IonApp>
-    </AuthProvider>
+    // <AuthProvider>
+    <IonApp>
+      <IonReactRouter>
+        <IonSplitPane contentId="main-content">
+          <CoreMenu />
+          <IonRouterOutlet id="main-content">
+            <Switch>
+              <Route path="/introduction" component={Introduction} />
+              <Route path="/register" component={Register} />
+              <Route path="/login" component={Login} />
+              <Route path="/" component={RootTab} />
+              <Redirect from="/" to={"/tabs/home"} />
+            </Switch>
+          </IonRouterOutlet>
+        </IonSplitPane>
+      </IonReactRouter>
+    </IonApp>
+    // </AuthProvider>
   );
 };
 
