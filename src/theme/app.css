@@ -1,0 +1,35 @@
+:root {
+    --color-primary: #F8EEE2;
+    --color-success: #D9614C;
+    --color-drak: #000000;
+}
+
+.bg-primary {
+    --background: #F8EEE2;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.bg-success {
+    background-color: var(--color-success);
+}
+
+.text-success {
+    --color: var(--color-success);
+}
+
+.text-dark {
+    --color: var(--color-dark);
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.text-white {
+    color: #fff;
+    --color: #fff;
+}
+
