@@ -1,0 +1,53 @@
+.flex-box-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.end-item {
+    margin-top: auto;
+}
+
+.fullscreen-relative {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.fullscreen-absolute {
+    position: absolute;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.absolute-end {
+    bottom: 0%;
+    left: 0%;
+}
+
+.absolute-center-left {
+    left: 50%
+}
+
+.absolute-center-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.magin-center {
+    margin: 0 auto;
+}
+
+.flex-items-center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+.d-flex-column{
+    flex-direction: column;
+}
